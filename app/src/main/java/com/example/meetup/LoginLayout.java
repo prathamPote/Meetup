@@ -1,12 +1,15 @@
 package com.example.meetup;
 
+import android.app.ActivityOptions;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Pair;
 import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -31,9 +34,10 @@ public class LoginLayout extends AppCompatActivity {
     EditText Email;
     EditText Password;
     Button LoginBtn;
-    ImageView GoogleBtn;
+    ImageView GoogleBtn,Logo;
     String email;
     String password;
+    TextView forgotpassword;
     LottieAnimationView loadinganimation;
     private FirebaseAuth auth;
     private GoogleSignInClient mGoogleSignInClient;
@@ -80,9 +84,11 @@ public class LoginLayout extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_layout);
         Email = findViewById(R.id.editTextTextEmailAddress);
+        Logo = findViewById(R.id.Logo2);
         Password = findViewById(R.id.editTextTextPassword);
         LoginBtn = findViewById(R.id.LoginBtn2);
         GoogleBtn = findViewById(R.id.GoogleImageview);
+        forgotpassword= findViewById(R.id.textView);
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestIdToken("192895743829-p2i2dat02rngbpbcp795c10g7v0nj1g1.apps.googleusercontent.com")
                 .requestEmail()
@@ -90,6 +96,16 @@ public class LoginLayout extends AppCompatActivity {
         mGoogleSignInClient = GoogleSignIn.getClient(this, gso);
         auth = FirebaseAuth.getInstance();
         loadinganimation = findViewById(R.id.LottieLoading);
+        forgotpassword.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent  = new Intent(LoginLayout.this,ForgotPassword.class);
+                Pair<View,String>[] pairs= new Pair[1];
+                pairs[0]= new Pair(Logo,"LogoTransition");
+                ActivityOptions options = ActivityOptions.makeSceneTransitionAnimation(LoginLayout.this,pairs);
+                startActivity(intent,options.toBundle());
+            }
+        });
         LoginBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -120,6 +136,7 @@ public class LoginLayout extends AppCompatActivity {
 
             }
         });
+
         GoogleBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

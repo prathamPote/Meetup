@@ -7,4 +7,6 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="entername">Enter Name</string>
     <string name="confirm_password">Confirm Password</string>
+    <string name="find_your_account">Find your account</string>
+    <string name="submit">Submit</string>
 </resources>
