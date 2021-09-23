@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register"
+    android:background="@color/black">
+
+
+    <EditText
+        android:id="@+id/ConfirmPasswordEditTxt"
+        android:layout_width="280dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="48dp"
+        android:background="@drawable/txtview"
+        android:ems="10"
+        android:hint="@string/confirm_password"
+        android:inputType="textPassword"
+        android:paddingStart="20dp"
+        android:textColorHint="#3B5249"
+        app:layout_constraintBottom_toTopOf="@+id/registerBtn2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/registerBtn2"
+        android:layout_width="181dp"
+        android:layout_height="49dp"
+        android:layout_weight="1"
+        android:background="@drawable/button"
+        android:text="Register"
+        android:transitionName="RegisterBtnTransition"
+        app:layout_constraintBottom_toBottomOf="@+id/GoogleImageview2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.883" />
+
+    <EditText
+        android:id="@+id/PasswordEditTxt"
+        android:layout_width="280dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="132dp"
+        android:background="@drawable/txtview"
+        android:ems="10"
+        android:hint="@string/enter_password"
+        android:inputType="textPassword"
+        android:paddingStart="20dp"
+        android:textColorHint="#3B5249"
+        app:layout_constraintBottom_toTopOf="@+id/registerBtn2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.969" />
+
+    <EditText
+        android:id="@+id/NameEditTxt"
+        android:layout_width="280dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="48dp"
+        android:background="@drawable/txtview"
+        android:ems="10"
+        android:hint="@string/entername"
+        android:inputType="textEmailAddress"
+        android:paddingStart="20dp"
+        android:selectAllOnFocus="false"
+        android:singleLine="false"
+        android:textColor="@color/black"
+        android:textColorHint="#3B5249"
+        app:layout_constraintBottom_toTopOf="@+id/EmailEditTxt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/EmailEditTxt"
+        android:layout_width="280dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="48dp"
+        android:background="@drawable/txtview"
+        android:ems="10"
+        android:hint="@string/enter_emailid"
+        android:inputType="textEmailAddress"
+        android:paddingStart="20dp"
+        android:selectAllOnFocus="false"
+        android:singleLine="false"
+        android:textColor="@color/black"
+        android:textColorHint="#3B5249"
+        app:layout_constraintBottom_toTopOf="@+id/PasswordEditTxt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.979" />
+
+    <ImageView
+        android:id="@+id/LogoRegisterView"
+        android:layout_width="126dp"
+        android:layout_height="116dp"
+        android:transitionName="LogoTransition"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.091"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.045"
+        app:srcCompat="@drawable/logo_1" />
+
+    <ImageView
+        android:id="@+id/GoogleImageview2"
+        android:layout_width="65dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/google_symbol_1" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/loadinganimation"
+        android:layout_width="376dp"
+        android:layout_height="140dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.542"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.522"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/loading">
+
+    </com.airbnb.lottie.LottieAnimationView>
+</androidx.constraintlayout.widget.ConstraintLayout>

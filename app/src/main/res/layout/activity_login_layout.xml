@@ -12,10 +12,43 @@
         android:layout_height="698dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.349"
+        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.272">
+        app:layout_constraintVertical_bias="0.324">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/SigninLottie"
+            android:layout_width="208dp"
+            android:layout_height="134dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.517"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.208"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            android:visibility="visible"
+            app:lottie_rawRes="@raw/signinanimation">
+
+        </com.airbnb.lottie.LottieAnimationView>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/LottieLoading"
+            android:layout_width="89dp"
+            android:layout_height="77dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.719"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            android:visibility="invisible"
+            app:lottie_rawRes="@raw/signinloading">
+
+        </com.airbnb.lottie.LottieAnimationView>
 
         <ImageView
             android:id="@+id/Logo2"
@@ -79,7 +112,7 @@
             app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
-            android:id="@+id/textViewForgotPassword"
+            android:id="@+id/textView"
             android:layout_width="183dp"
             android:layout_height="40dp"
             android:layout_marginTop="16dp"
