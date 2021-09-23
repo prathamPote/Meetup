@@ -18,7 +18,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 
 public class ForgotPassword extends AppCompatActivity {
-
+    //
     Button submit;
     EditText emailid;
     ImageView logo;
