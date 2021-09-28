@@ -6,12 +6,17 @@
         <entry key="..\:/Users/pratham/AndroidStudioProjects/Meetup/app/src/main/res/drawable/btnstyle.xml" value="0.18385416666666668" />
         <entry key="..\:/Users/pratham/AndroidStudioProjects/Meetup/app/src/main/res/drawable/button.xml" value="0.18385416666666668" />
         <entry key="..\:/Users/pratham/AndroidStudioProjects/Meetup/app/src/main/res/drawable/logostyle.xml" value="0.26614583333333336" />
+        <entry key="..\:/Users/pratham/AndroidStudioProjects/Meetup/app/src/main/res/drawable/scrollview.xml" value="0.13125" />
         <entry key="..\:/Users/pratham/AndroidStudioProjects/Meetup/app/src/main/res/drawable/txtview.xml" value="0.19375" />
         <entry key="..\:/Users/pratham/AndroidStudioProjects/Meetup/app/src/main/res/layout/activity_forgot_password.xml" value="0.17760416666666667" />
         <entry key="..\:/Users/pratham/AndroidStudioProjects/Meetup/app/src/main/res/layout/activity_home_screen.xml" value="0.234375" />
         <entry key="..\:/Users/pratham/AndroidStudioProjects/Meetup/app/src/main/res/layout/activity_login_layout.xml" value="0.2359375" />
         <entry key="..\:/Users/pratham/AndroidStudioProjects/Meetup/app/src/main/res/layout/activity_main.xml" value="0.2054794520547945" />
         <entry key="..\:/Users/pratham/AndroidStudioProjects/Meetup/app/src/main/res/layout/activity_register.xml" value="0.1" />
+        <entry key="..\:/Users/pratham/AndroidStudioProjects/Meetup/app/src/main/res/layout/activity_select_interests.xml" value="0.15625" />
+        <entry key="..\:/Users/pratham/AndroidStudioProjects/Meetup/app/src/main/res/layout/fragment_interestsfragment.xml" value="0.25" />
+        <entry key="..\:/Users/pratham/AndroidStudioProjects/Meetup/app/src/main/res/layout/fragment_intrests.xml" value="0.19322916666666667" />
+        <entry key="..\:/Users/pratham/AndroidStudioProjects/Meetup/app/src/main/res/layout/fragment_intrests_list.xml" value="0.264" />
         <entry key="..\:/Users/pratham/AndroidStudioProjects/Meetup/app/src/main/res/layout/fragment_register.xml" value="0.19895833333333332" />
       </map>
     </option>

@@ -94,7 +94,7 @@ public class Register extends AppCompatActivity {
 
     private void updateUI(FirebaseUser user) {
         if (!user.getUid().isEmpty()) {
-            startActivity(new Intent(Register.this,HomeScreen.class));
+            startActivity(new Intent(Register.this,SelectInterests.class));
 
         }
         else

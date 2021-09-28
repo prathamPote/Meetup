@@ -15,6 +15,9 @@
         <item name="android:windowActivityTransitions">true</item>
         <item name="windowNoTitle">true</item>
         <item name="android:windowFullscreen">true</item>
-
+    </style>
+    <style name="CustomChipstyle" parent="Widget.MaterialComponents.Chip.Filter">
+    <item name="chipBackgroundColor">@color/chip_background</item>
+        <item name="android:textColor">@color/chip_text</item>
     </style>
 </resources>

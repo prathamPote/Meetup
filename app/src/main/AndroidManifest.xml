@@ -12,8 +12,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Meetup">
         <activity
+            android:name=".SelectInterests"
+            android:exported="true" />
+        <activity
             android:name=".ForgotPassword"
-            android:exported="true"/>
+            android:exported="true" />
         <activity
             android:name=".HomeScreen"
             android:exported="true" />
