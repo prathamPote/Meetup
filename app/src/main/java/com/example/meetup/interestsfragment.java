@@ -13,6 +13,7 @@ import android.view.ViewGroup;
 import com.google.android.material.chip.ChipGroup;
 
 public class interestsfragment extends Fragment {
+    ChipGroup sports,ent,tech;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -24,5 +25,9 @@ public class interestsfragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+         sports = view.findViewById(R.id.SportsChipGroup);
+         ent = view.findViewById(R.id.EntChipGroup2);
+         tech = view.findViewById(R.id.TechChipGroup);
+
     }
 }
